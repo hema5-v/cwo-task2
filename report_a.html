@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  <title>Document</title>
+</head>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<style>
+  /* Header */
+
+.body{
+  font:15px Arial, Helvetica,sans-serif; 
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4;
+}
+.container{
+  width:80%; 
+  margin:auto;
+  overflow:hidden;
+}
+
+.header{
+  background:#fff;
+  display:flex;
+  position:fixed;
+  width:100%;
+  padding:20px 20px;
+  z-index:3;
+  box-shadow:-6px 8px 6px -6px #000;
+  background:linear-gradient(-20deg, #b721ff 10%, #21d4fd 50%) no-repeat; 
+}
+
+.navbar{
+  float:right;
+  margin-top:px; 
+}
+
+.menu{
+  margin:0;
+  padding:0;
+}
+
+.menu__item{
+  float:left;
+  display:inline;
+  padding:0 16px 0 16px; 
+}
+
+.menu__link{
+  color:#000;
+  text-decoration:none;
+  text-transform:uppercase;
+  font-size:16px; 
+}
+
+.menu__link:hover{
+  color:#ffffff;
+  font-weight:bold;
+}
+
+/* report_a */
+body {
+  font-family: 'Anaheim';
+  font-size: 1.2em;
+}
+
+#outside {
+  background-color: rgb(255, 255, 255);
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+h1 {
+  font-size: 1.5em;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+form {
+  /* Just to center the form on the page */
+  margin: 0 auto;
+  width: 70%;
+  /* To see the limits of the form */
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+  
+}
+#survey-form {
+  background-color: white;
+  box-shadow: 15px 10px 15px 18px rgb(153, 0, 255);
+}
+
+fieldset { 
+  border:1px solid lightgray;
+  margin: 10px;
+ }
+
+legend {
+  font-weight: 700;
+}
+
+#number {
+  width: 150px;
+}
+
+
+div + div {
+  margin-top: 1em;
+  }
+
+
+
+input, textarea {
+  /* To make sure that all text field have the same font settings
+     By default, textarea are set with a monospace font */
+  /* font: 1em sans-serif; */
+
+  /* To give the same size to all text field */
+  width: 200px;
+
+/*   -moz-box-sizing: border-box;
+       box-sizing: border-box; */
+
+  /* To harmonize the look & feel of text field border */
+  border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+  /* To give a little highligh on active elements */
+  border-color: OrangeRed;
+}
+
+textarea {
+  /* To properly align multiline text field with their label */
+  vertical-align: top;
+
+  /* To give enough room to type some text */
+  height: 5em;
+
+  /* To allow users to resize any textarea vertically
+     It works only on Chrome, Firefox and Safari */
+  resize: vertical;
+}
+
+.button {
+  /* To position the buttons to the same position of the text fields */
+  padding-left: 90px; /* same size as the label elements */
+}
+
+button {
+  margin: .5em;
+  font-size: 1em;
+  text-transform: capitalize;
+  background-color: rgb(136, 0, 170);
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 2px;
+  
+}
+
+#submitbutton {
+  display: flex; 
+  justify-content: center;
+}
+
+/* Social */
+
+.icons-social{
+  text-align:center;
+  padding:5px;
+}
+
+.menu--list-social{
+  list-style-type:none;
+}
+
+.icons-social__item{
+  display:inline;
+}
+
+.icons-social__i{
+  font-size:23px;
+  color:#444442;
+  padding:10px;
+  transition:all 0.3s linear;    
+}
+
+.icons-social__i:hover{
+  color:#fff;
+  transform:translateY(-7px);
+}
+
+/* Footer */
+
+.footer{
+  padding:40px;  
+  color:#444442;
+  background:linear-gradient(-20deg, #b721ff 10%, #21d4fd 30%) no-repeat; 
+  text-align:center;
+}
+
+.container-footer__link{
+  color:#444442;
+  text-decoration:none;
+}
+
+.container-footer__link:hover{
+  color:#fff;
+}
+
+</style>
+
+
+
+<body class="body">
+
+  <!-- Navigation -->
+ 
+  <header class="header">
+     <div class="container">        
+       <nav class="navbar">
+         <ul class="menu">
+           <li class="menu__item"><a class="menu__link" href="#home-section">Home</a></li>
+           <li class="menu__item"><a class="menu__link" href="#about-section">About</a></li>
+           <li class="menu__item"><a class="menu__link" href="#Report a Complaint-section">Report a Complaint</a></li>
+           <li class="menu__item"><a class="menu__link" href="#services-section">Online Safety Basics</a></li>
+           <li class="menu__item"><a class="menu__link" href="#contact-section">Contact</a></li>
+           <li class="menu__item"><a class="menu__link" href="#helpline-section">Helpline</a></li>
+         </ul>
+       </nav>
+     </div>
+   </header>
+   <BR>
+
+     <!-- report_a -->
+  
+  <div id="outside">
+    <form id="survey-form" action="/my-handling-form-page" method="post">
+      <h1 style="color:rgb(103, 27, 126);text-align: center;font-size: 50px;" id="title">Report Anonymously</h1>
+      <p id="description"><b>Note:</b>Information provided in the Form Should be Correct and all the fileds must be filled respectively</p>
+      
+      <!-- ------------------Personal Details---------------------------- -->
+      <fieldset>
+        <!-- groups of widgets that share the same purpose, for styling and semantic purposes -->
+        <legend>Details</legend>
+        <!-- formally describes the purpose of the fieldset it is included inside. -->
+        
+    <label for="cars">Choose category of complaint:</label>
+      <select id="cars" name="cars">
+        <option value="volvo">Complain Categories</option>
+        <option value="volvo">Online and Social Media Related Crime</option>
+        <option value="saab">Online Financial Fraud</option>
+        <option value="fiat">Ransomeware</option>
+        <option value="audi">Cyber Terrorism</option>
+      </select>
+            <div>
+        <!-- ------------------Radio Buttons-------------------------------- -->
+        <div>
+          <div>
+            <label for="Gender">The Incident Occured with</label>
+            <p>
+              <input type="radio" name="gender" value="male" checked> Me<br>
+              <input type="radio" name="gender" value="female">Family Member/ Relative<br>
+              <input type="radio" name="gender" value="other"> Friend<br>
+              <input type="radio" name="gender" value="other"> Other
+            </p>
+          </div>
+        </div>
+        <label for="birthdaytime">Approximate(date and time)of the Incident:</label>
+      <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+      
+      </fieldset>
+      <!-- ------------------Checkboxes-------------------------------- -->
+      <fieldset>
+        <label for="Gender">Reason for Delay in Reporting</label>
+        <p>
+          <input type="checkbox" name="tattoo" value="tattoo"> I was in a dilemma and scared<br>
+          <input type="checkbox" name="age" value="Car"> I had no clue whom to ask for help<br>
+          <input type="checkbox" name="car" value="car"> I was unable to identify soon<br>
+          <input type="checkbox" name="work" value="work" checked> No valid reason <br>
+          
+        </p>
+      </fieldset>
+      
+      <!-- -----------------Dropdown menus--------------------------------- -->
+      
+      <fieldset>
+        <div>
+          <label for="politics">When did the incindent occur:</label>
+          <select id="dropdown">
+            <option value="left">When</option>
+            <option value="left">Today</option>
+      <option value="left">Yesterday</option>
+      <option value="right">One week ago</option>
+            <option value="right">One Month ago</option>
+      <option value="conservative">Three Months ago</option>
+      <option value="nazi">Six Months ago</option>
+      </select>
+    
+          <label for="politics">Where did the incident occur:</label>
+          <select id="dropdown2">
+            <option value="left">Where</option>
+      <option value="University">Home</option>
+      <option value="University">Public Place</option>
+      <option value="College">via message</option>
+      <option value="Secondary">via Phone </option>  
+      <option value="None">other</option>
+      </select>
+        </div>
+      </fieldset>
+    
+      <!-- --------------------Text Areas------------------------------ -->
+      
+      <fieldset>
+        <legend>Suspect Details</legend>
+        <div>
+          <label for="msg"></label>
+          <p> In 150 words or more explain about the Incident Occured</p>
+          <textarea id="msg" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>   </div>
+        <div>
+          <label for="msg">Please upload contact details of Suspect or Address for references</label><br>
+          <textarea id="msg2" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>   </div>
+        <p>Upload Photo of Suspect /Upload Any Document recived by the suspect/Any document related to Suspect:
+          <form action="/action_page.php">
+      <input type="file" id="myFile" name="filename">
+      <input type="submit">
+    </form>
+          
+      </fieldset>
+    
+      <div id="submitbutton">
+        <button type="submit" id="submit">Submit and Report</button>   </div>
+    
+    </form>
+      </div>
+
+<!-- Footer --> 
+      
+<footer class="footer">
+  <div class="icons-social">
+    <ul class="menu menu--list-social">
+      <li class="icons-social__item"><a class="icons-social__link" href="#"><i class="icons-social__i fab fa-codepen"></i></a></li>              
+      <li class="icons-social__item"><a class="icons-social__link" href="#"><i class="icons-social__i fab fa-instagram"></i></a></li>
+      <li class="icons-social__item"><a class="icons-social__link" href="#"><i class="icons-social__i fab fa-facebook"></i></a></li>
+      <li class="icons-social__item"><a class="icons-social__link" href="#"><i class="icons-social__i fab fa-twitter"></i></a></li>
+      <li class="icons-social__item"><a class="icons-social__link" href="#"><i class="icons-social__i fab fa-google-plus"></i></a></li>
+    </ul>
+  </div>
+  <div class="container-footer">
+    
+  </div>
+</footer>
+
+</body>
+</html>

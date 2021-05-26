@@ -1,0 +1,227 @@
+<html>
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width">
+            <meta http-equiv="X-UA-Compatible" content="ie-edge">
+            <meta name="description" content="Professionals in Web Design and Development">
+            <meta name="keywords" content="web design, web development, seo, web positioning">
+              <meta name="author" content="Yulian Brito">
+              <title>Responsive Website #1</title>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+          </head>   
+      
+<style>
+
+/* Header */
+
+.body{
+  font:15px Arial, Helvetica,sans-serif; 
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4;
+}
+.container{
+  width:80%; 
+  margin:auto;
+  overflow:hidden;
+}
+
+.header{
+  background:#fff;
+  display:flex;
+  position:fixed;
+  width:100%;
+  padding:20px 20px;
+  z-index:3;
+  box-shadow:-6px 8px 6px -6px #000;
+  background:linear-gradient(-20deg, #b721ff 10%, #21d4fd 50%) no-repeat; 
+}
+
+.navbar{
+  float:right;
+  margin-top:px; 
+}
+
+.menu{
+  margin:0;
+  padding:0;
+}
+
+.menu__item{
+  float:left;
+  display:inline;
+  padding:0 16px 0 16px; 
+}
+
+.menu__link{
+  color:#000;
+  text-decoration:none;
+  text-transform:uppercase;
+  font-size:16px; 
+}
+
+.menu__link:hover{
+  color:#ffffff;
+  font-weight:bold;
+}
+
+/* Accept */
+
+.gh {
+  border: 1px solid rgb(153, 0, 255);
+  background-color: rgb(220, 150, 230);
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+  color: white;
+  text-align: center;
+  font-size: 23px;
+  font-family: "Monotype Corsiva", Times, serif;
+  margin: 150px;
+  box-shadow: 10px 15px 18px rgb(153, 0, 255);
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #7cc6e4;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* Social */
+
+.icons-social{
+  text-align:center;
+  padding:5px;
+}
+
+.menu--list-social{
+  list-style-type:none;
+}
+
+.icons-social__item{
+  display:inline;
+}
+
+.icons-social__i{
+  font-size:23px;
+  color:#444442;
+  padding:10px;
+  transition:all 0.3s linear;    
+}
+
+.icons-social__i:hover{
+  color:#fff;
+  transform:translateY(-7px);
+}
+
+/* Footer */
+
+.footer{
+  padding:40px;  
+  color:#444442;
+  background:linear-gradient(-20deg, #b721ff 10%, #21d4fd 30%) no-repeat; 
+  text-align:center;
+}
+
+.container-footer__link{
+  color:#444442;
+  text-decoration:none;
+}
+
+.container-footer__link:hover{
+  color:#fff;
+}
+</style>
+</head>
+<body class="body">
+
+     <!-- Navigation -->
+    
+     <header class="header">
+        <div class="container">        
+          <nav class="navbar">
+            <ul class="menu">
+              <li class="menu__item"><a class="menu__link" href="#home-section">Home</a></li>
+              <li class="menu__item"><a class="menu__link" href="#about-section">About</a></li>
+              <li class="menu__item"><a class="menu__link" href="#Report a Complaint-section">Report a Complaint</a></li>
+              <li class="menu__item"><a class="menu__link" href="#services-section">Online Safety Basics</a></li>
+              <li class="menu__item"><a class="menu__link" href="#contact-section">Contact</a></li>
+              <li class="menu__item"><a class="menu__link" href="#helpline-section">Helpline</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <BR>
+
+      <!--accept -->
+
+    <p class="gh" >
+        <u>Prior to filing a complaint with this portal, we would request you to read the below information regarding terms and conditions. Should you have queries prior to filing your complaint, view Frequently Asked Questions FAQ
+        </u>
+        <br><br><br>
+        The information I've provided on this form is correct to the best of my knowledge. I acknowledge that providing false information could make me liable to penal actions under Indian Laws.
+<br>
+I understand that action on the complaints reported on this portal shall be taken by concerned authorities as per Indian Laws.
+<br>
+The complaint information you submit to this site is encrypted via secure socket layer (SSL) encryption. Please see the Privacy Policy for further information.
+<br>
+We thank you for your cooperation.<br><br>
+<a href="report_a.html">
+        <button class="button" style="vertical-align:middle"><span>I Accept </span></button>
+</a>
+      </p>
+
+      <!-- Footer --> 
+      
+      <footer class="footer">
+        <div class="icons-social">
+          <ul class="menu menu--list-social">
+            <li class="icons-social__item"><a class="icons-social__link" href="#"><i class="icons-social__i fab fa-codepen"></i></a></li>              
+            <li class="icons-social__item"><a class="icons-social__link" href="#"><i class="icons-social__i fab fa-instagram"></i></a></li>
+            <li class="icons-social__item"><a class="icons-social__link" href="#"><i class="icons-social__i fab fa-facebook"></i></a></li>
+            <li class="icons-social__item"><a class="icons-social__link" href="#"><i class="icons-social__i fab fa-twitter"></i></a></li>
+            <li class="icons-social__item"><a class="icons-social__link" href="#"><i class="icons-social__i fab fa-google-plus"></i></a></li>
+          </ul>
+        </div>
+        <div class="container-footer">
+          
+        </div>
+      </footer>
+
+</body>
+</html>
